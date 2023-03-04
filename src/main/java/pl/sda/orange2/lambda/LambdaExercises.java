@@ -20,12 +20,26 @@ public class LambdaExercises {
         //()parenthesis - argument list
         // -> arguments, body separator
         //{} parenthesis -method body
-        BoysDoCry firstLambda =()->{};
+        BoysDoCry firstLambda = () -> {
+        };
         BoysDoCry secondLambda = () -> System.out.println("Lambda");
         secondLambda.silnoreki();
         BoysDoCry trirdLambda = () -> {
             System.out.println("Lambda 2");
             System.out.println("Lambda 3");
         };
+        System.out.println("___________________________________________________________");
+        System.out.println("Coffee time");
+
+        CoffeeMaker myCoffeeMaker = (int water, String coffeeType) -> "my coffee";
+        //to samo dłużej
+        CoffeeMaker myCoffeeMaker2 = (int water, String coffeeType) -> {
+            return "my coffee";
+        };
+        CoffeeMaker myCoffeeMaker3 = (int water, String coffeeType) -> {
+            System.out.println("Coffee brewing...");
+            return "my coffee";
+        };
+        CoffeeMaker shortVersion = (water, coffeeType) -> "my coffee";
     }
 }
