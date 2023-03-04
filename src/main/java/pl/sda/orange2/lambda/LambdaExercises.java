@@ -16,5 +16,16 @@ public class LambdaExercises {
             }
         };
         anonymousClassReference.silnoreki();
+
+        //()parenthesis - argument list
+        // -> arguments, body separator
+        //{} parenthesis -method body
+        BoysDoCry firstLambda =()->{};
+        BoysDoCry secondLambda = () -> System.out.println("Lambda");
+        secondLambda.silnoreki();
+        BoysDoCry trirdLambda = () -> {
+            System.out.println("Lambda 2");
+            System.out.println("Lambda 3");
+        };
     }
 }
