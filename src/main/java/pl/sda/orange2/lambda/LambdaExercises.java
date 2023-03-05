@@ -41,7 +41,7 @@ public class LambdaExercises {
             return "my coffee";
         };
         CoffeeMaker shortVersion = (water, coffeeType) -> "my coffee";
-        shortVersion.prepare(5,"Large latte");
+        shortVersion.prepare(5, "Large latte");
 
     }
 }

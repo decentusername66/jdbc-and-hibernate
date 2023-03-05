@@ -5,5 +5,6 @@ public interface BoysDoCry {
     //funkcyjny iterface - jedna abstrakcyjna metoda
     void silnoreki();
 
-    default void cry(){};
+    default void cry() {
+    }
 }
